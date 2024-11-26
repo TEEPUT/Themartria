@@ -1,0 +1,29 @@
+.container {
+    
+}
+
+
+.contents {
+    height: 150px;
+}
+
+.contentContainer {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.jump {
+    height: 150px;
+}
+
+.semijump {
+    height: 50px;
+}
+
+.devider {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

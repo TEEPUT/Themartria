@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.subcontainer1 {
+    width: 50%;
+    animation-duration: 3s;
+    animation-name: slideleftin;
+}
+
+.subcontainer2 {
+    width: 50%;
+    animation-duration: 3s;
+    animation-name: sliderightin;
+}
+
+.mainImage {
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.subImageBox1 {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.subImageBox2 {
+    border: 1px black solid;
+}
+
+@keyframes sliderightin {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes slideleftin {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+
+
+
+
+
+/* 초기 위치 */
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 왼쪽에서 나타나기 효과 */
+.section1 {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+/* 오른쪽에서 나타나기 효과 */
+.section2 {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+/* 제자리에서 나타나기 효과 */
+.section3 {
+  opacity: 0;
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}

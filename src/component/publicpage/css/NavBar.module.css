@@ -1,0 +1,26 @@
+/* NavBar.module.css */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: transparent; /* 기본은 투명 */
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: rgb(68, 68, 68); /* 스크롤 시 활성화 */
+}
+
+.nav {
+    width: 25%;
+    text-align: center;
+    padding: 25px 0;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 3px black;
+    font-weight: bold;
+}

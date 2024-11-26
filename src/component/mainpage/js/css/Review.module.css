@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 120px;
+}
+
+.reviewBox1 {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.reviewBox2 {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 350px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+
+.blurbox {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    margin-left: 300px;
+    margin-top: 300px;
+    z-index: 2;
+    background-color: white;
+}
