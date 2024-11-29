@@ -1,25 +1,19 @@
 .container {
-    
-}
-
-
-.contents {
-    height: 150px;
+    overflow: hidden;
 }
 
 .contentContainer {
     margin: 0 auto;
-    max-width: 900px;
     display: flex;
     flex-flow: column nowrap;
 }
 
 .jump {
-    height: 150px;
+    height: 130px;
 }
 
 .semijump {
-    height: 50px;
+    height: 70px;
 }
 
 .devider {

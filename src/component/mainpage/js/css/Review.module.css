@@ -1,32 +1,58 @@
-.container{
+.container {
+    color: white;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    background-image: url('/public/image/header.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blur { 
+    position: absolute;
+    height: 382px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.header {
+    padding-top: 30px;
     display: flex;
     flex-flow: column nowrap;
-    margin: 0 120px;
+    align-items: center;
+    animation-name: slideTopIn;
+    animation-duration: 2s;
 }
 
-.reviewBox1 {
-    width: 400px;
-    height: auto;
-    border-radius: 20px;
+.maxbox {
+    margin: 30px auto;
+    max-width: 800px;
+    padding-bottom: 30px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
 }
 
-.reviewBox2 {
-    position: absolute;
-    margin-left: 350px;
-    margin-top: 350px;
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
-    z-index: 3;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
 }
 
-
-.blurbox {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    margin-left: 300px;
-    margin-top: 300px;
-    z-index: 2;
-    background-color: white;
+@keyframes slideTopIn {
+    from {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

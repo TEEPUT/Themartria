@@ -1,3 +1,8 @@
 .headerImage {
     width: 100%;
+    display: inline-block;
+    height: 100vh;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: antiquewhite;
 }

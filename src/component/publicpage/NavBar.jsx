@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import style from './css/NavBar.module.css';
+import NavPop from './NavPop';
 
 export default function NavBar() {
     const [scrolled, setScrolled] = useState(false);
@@ -27,6 +28,8 @@ export default function NavBar() {
             <div className={style.nav}>Lorem</div>
             <div className={style.nav}>Lorem</div>
             <div className={style.nav}>Lorem</div>
+            <div className={style.nav}>Lorem</div>
+            <div className={style.nav}><NavPop /></div>
         </div>
     );
 }

@@ -1,18 +1,20 @@
 .container {
     display: flex;
     flex-flow: row nowrap;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .subcontainer1 {
     width: 50%;
-    animation-duration: 3s;
-    animation-name: slideleftin;
+    animation-duration: 4s;
+    animation-name: slideLeftIn;
 }
 
 .subcontainer2 {
     width: 50%;
-    animation-duration: 3s;
-    animation-name: sliderightin;
+    animation-duration: 4s;
+    animation-name: slideRightIn;
 }
 
 .mainImage {
@@ -36,7 +38,19 @@
     border: 1px black solid;
 }
 
-@keyframes sliderightin {
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    animation-name: slideTopIn;
+    animation-duration: 2s;
+}
+
+.semijump {
+    height: 50px;
+}
+
+@keyframes slideRightIn {
     from {
         transform: translateX(100%);
         opacity: 0;
@@ -46,11 +60,23 @@
         transform: translateX(0);
         opacity: 1;
     }
-  }
+}
 
-  @keyframes slideleftin {
+@keyframes slideLeftIn {
+from {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+  
+to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+@keyframes slideTopIn {
     from {
-        transform: translateX(-100%);
+        transform: translateY(-40%);
         opacity: 0;
     }
   
@@ -58,7 +84,7 @@
         transform: translateX(0);
         opacity: 1;
     }
-  }
+}
 
 
 
