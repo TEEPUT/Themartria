@@ -21,69 +21,89 @@ export default function MainPage() {
   const [InfoRef, InfoInView] = useInView({ triggerOnce: true });
   const [ConnectRef, ConnectInView] = useInView({ triggerOnce: true });
 
+  const mainPageSections = [
+    { id: 'home-section', name: 'Lorem' },
+    { id: 'main-section', name: 'Lorem' },
+    { id: 'sub-section', name: 'Lorem' },
+    { id: 'review-section', name: 'Lorem' },
+    { id: 'info-section', name: 'Lorem' },
+    { id: 'connect-section', name: 'Lorem' },
+  ];
+
   return (
     <div className={style.container}>
       {/* 네비게이션 */}
-      <NavBar />
+      <NavBar title="Main Page" sections={mainPageSections} />
       {/* 헤더 */}
-      <Header />
+      <section id="home-section">
+        <Header />
+      </section>
       {/* 컨텐츠 */}
       <div className={style.contentContainer}>
-        <div className={style.semijump}></div>
 
         {/* MainProduct Lazy Loading */}
-        <div ref={MainProductRef} style={{ minHeight: '200px' }}>
-          {MainProductInView && (
-            <React.Suspense fallback={<div></div>}>
-              <MainProduct />
-            </React.Suspense>
-          )}
-        </div>
+        <section id="main-section">
+          <div className={style.semijump}></div>
+          <div ref={MainProductRef} style={{ minHeight: '200px' }}>
+            {MainProductInView && (
+              <React.Suspense fallback={<div></div>}>
+                <MainProduct />
+              </React.Suspense>
+            )}
+          </div>
+        </section>
 
-        <div className={style.jump}></div>
-        <div className={style.semijump}></div>
 
         {/* SubProduct Lazy Loading */}
-        <div ref={SubProductRef} style={{ minHeight: '200px' }}>
-          {SubProductInView && (
-            <React.Suspense fallback={<div></div>}>
-              <SubProduct />
-            </React.Suspense>
-          )}
-        </div>
+        <section id="sub-section">
+          <div className={style.jump}></div>
+          <div ref={SubProductRef} style={{ minHeight: '200px' }}>
+            {SubProductInView && (
+              <React.Suspense fallback={<div></div>}>
+                <SubProduct />
+              </React.Suspense>
+            )}
+          </div>
+        </section>
 
-        <div className={style.jump}></div>
 
         {/* Review Lazy Loading */}
-        <div ref={ReviewRef} style={{ minHeight: '200px' }}>
-          {ReviewInView && (
-            <React.Suspense fallback={<div></div>}>
-              <Review />
-            </React.Suspense>
-          )}
-        </div>
+        <section id="review-section">
+          <div className={style.jump}></div>
+          <div ref={ReviewRef} style={{ minHeight: '200px' }}>
+            {ReviewInView && (
+              <React.Suspense fallback={<div></div>}>
+                <Review />
+              </React.Suspense>
+            )}
+          </div>
+        </section>
 
-        <div className={style.semijump}></div>
 
         {/* Info Lazy Loading */}
-        <div ref={InfoRef} style={{ minHeight: '200px' }}>
-          {InfoInView && (
-            <React.Suspense fallback={<div></div>}>
-              <Info />
-            </React.Suspense>
-          )}
-        </div>
+        <section id="info-section">
+          <div className={style.semijump}></div>
+          <div ref={InfoRef} style={{ minHeight: '200px' }}>
+            {InfoInView && (
+              <React.Suspense fallback={<div></div>}>
+                <Info />
+              </React.Suspense>
+            )}
+          </div>
+        </section>
 
-        <div className={style.semijump}></div>
 
         {/* Connect Lazy Loading */}
-        <div ref={ConnectRef} style={{ minHeight: '200px' }}>
-          {ConnectInView && (
-            <React.Suspense fallback={<div></div>}>
-              <Connect />
-            </React.Suspense>
-          )}
-        </div>
+        <section id="connect-section">
+          <div className={style.semijump}></div>
+          <div ref={ConnectRef} style={{ minHeight: '200px' }}>
+            {ConnectInView && (
+              <React.Suspense fallback={<div></div>}>
+                <Connect />
+              </React.Suspense>
+            )}
+          </div>
+        </section>
 
         <div className={style.jump}></div>
       </div>

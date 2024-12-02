@@ -32,7 +32,7 @@
 }
 
 .icon:hover {
-    transform: rotate(360deg);
+    filter: drop-shadow(0px 0px 1px black);
 }
 
 .jump {
@@ -46,22 +46,22 @@
 
 .icon-facebook {
     color: #4267B2; /* Facebook 색상 */
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
 }
 
 .icon-google {
     color: #DB4437; /* Google 색상 */
-    animation-delay: 1.6s;
+    animation-delay: 1.0s;
 }
 
 .icon-n {
     color: #4CAF50; /* Custom 색상 */
-    animation-delay: 2.4s;
+    animation-delay: 1.5s;
 }
 
 .icon-phone {
-    color: #000; /* Phone 색상 */
-    animation-delay: 3.2s;
+    color: gray; /* Phone 색상 */
+    animation-delay: 2s;
 }
 
 @keyframes slideTopIn {
