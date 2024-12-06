@@ -8,8 +8,11 @@ export default function CommunicationPage() {
     const [selectedRow, setSelectedRow] = useState(null); // 현재 선택된 테이블 번호
 
     const communicationPageSections = [
-        { id: "home-section", name: "Lorem ipsum" },
-        { id: "1-section", name: "Lorem ipsum" },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
+
     ];
 
     const tableData = [

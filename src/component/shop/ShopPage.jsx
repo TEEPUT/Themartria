@@ -8,8 +8,10 @@ import Up from '../publicpage/Up';
 
 export default function ShopPage() {
     const shopPageSections = [
-        { id: "home-section", name: "Lorem ipsum" },
-        { id: "1-section", name: "Lorem ipsum" },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
     ];
 
     return (

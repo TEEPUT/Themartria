@@ -13,7 +13,7 @@ const NavBar = ({ title, sections = [] }) => {
 
   useEffect(() => {
     // 페이지 로드 시 sessionStorage에서 사용자 이름을 가져옴
-    const storedUsername = sessionStorage.getItem('username');
+    const storedUsername = localStorage.getItem('username');
     if (storedUsername) {
       setUsername(storedUsername);
     }
@@ -66,7 +66,7 @@ const NavBar = ({ title, sections = [] }) => {
 
   const handleLogout = () => {
     // 로그아웃 함수, sessionStorage에서 사용자 이름을 제거하고 로그인 페이지로 이동
-    sessionStorage.removeItem('username');
+    localStorage.removeItem('username');
     setUsername('');
     navigate('/login');
   };

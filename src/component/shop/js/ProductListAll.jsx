@@ -9,6 +9,8 @@ const productData = [
     { id: 4, name: "Product 4", description: testText, price: "40,000 원", coupangLink: "https://coupang.com", naverLink: "shopping.naver.com" },
     { id: 5, name: "Product 5", description: testText, price: "50,000 원", coupangLink: "https://coupang.com", naverLink: "shopping.naver.com" },
     { id: 6, name: "Product 6", description: testText, price: "60,000 원", coupangLink: "https://coupang.com", naverLink: "shopping.naver.com" },
+    { id: 6, name: "Product 7", description: testText, price: "50,000 원", coupangLink: "https://coupang.com", naverLink: "shopping.naver.com" },
+    { id: 6, name: "Product 8", description: testText, price: "70,000 원", coupangLink: "https://coupang.com", naverLink: "shopping.naver.com" },
 ];
 
 export default function ProductListAll() {

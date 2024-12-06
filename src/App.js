@@ -4,6 +4,7 @@ import MainPage from "./component/mainpage/MainPage";
 import AboutPage from './component/about/AboutPage';
 import ShopPage from './component/shop/ShopPage';
 import CommunicationPage from './component/communication/CommunicationPage';
+import LoginPage from './component/login/LoginPage';
 
 // ScrollToTop 컴포넌트
 const ScrollToTop = () => {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/communication" element={<CommunicationPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

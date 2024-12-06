@@ -12,9 +12,10 @@ const FindUs = React.lazy(() => import('./js/FindUs'));
 
 export default function AboutPage() {
     const aboutPageSections = [
-        { id: "home-section", name: "Lorem ipsum" },
-        { id: "1-section", name: "Lorem ipsum" },
-        { id: "2-section", name: "Lorem ipsum" },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
+        { id: '', name: '' },
     ];
 
     const [activeSection, setActiveSection] = useState("Brand Story"); // 현재 활성화된 섹션
